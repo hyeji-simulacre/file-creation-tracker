@@ -1,0 +1,13 @@
+{
+  "id": "file-creation-tracker",
+  "name": "File Creation Tracker",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Shows recently created files in a sidebar, sorted by date. Works with files created outside Obsidian (VS Code, terminal, etc.). AI-created plugin by ContextA.",
+  "author": "Hyeji Jung",
+  "authorUrl": "",
+  "isDesktopOnly": true,
+  "fundingUrl": {
+    "PayPal": "https://paypal.me/HyejiJung350"
+  }
+}

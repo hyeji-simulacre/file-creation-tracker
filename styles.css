@@ -1,0 +1,127 @@
+/* File Creation Tracker - Sidebar Styles */
+
+.fct-container {
+  padding: 0;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.fct-date-group {
+  padding: 6px 12px 4px;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--background-modifier-border);
+  position: sticky;
+  top: 0;
+  background: var(--background-secondary);
+  z-index: 1;
+}
+
+.fct-file-item {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--background-modifier-border-hover);
+  transition: background 0.1s ease;
+}
+
+.fct-file-item:hover {
+  background: var(--nav-item-background-hover);
+}
+
+.fct-file-item:active {
+  background: var(--nav-item-background-active);
+}
+
+.fct-file-name {
+  font-size: 0.9em;
+  color: var(--text-normal);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fct-file-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.fct-file-path {
+  font-size: 0.75em;
+  color: var(--text-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  margin-right: 8px;
+}
+
+.fct-file-date {
+  font-size: 0.7em;
+  color: var(--text-faint);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.fct-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-muted);
+  font-size: 0.9em;
+  text-align: center;
+  padding: 20px;
+}
+
+.fct-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: var(--text-muted);
+  font-size: 0.85em;
+}
+
+/* Settings page */
+.fct-folder-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 16px;
+}
+
+.fct-folder-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 0;
+  font-size: 0.85em;
+}
+
+.fct-folder-item input[type="checkbox"] {
+  margin: 0;
+}
+
+.fct-ext-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.fct-ext-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85em;
+}
+
+.fct-ext-item input[type="checkbox"] {
+  margin: 0;
+}
