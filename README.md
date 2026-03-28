@@ -50,6 +50,25 @@ After enabling, click the clock icon in the left ribbon or use the command palet
 - People who use Obsidian primarily for reading and reviewing, not writing
 - Anyone who wants a quick chronological view of their vault activity
 
+## Development
+
+This plugin is plain JavaScript with no build step. Edit `main.js` directly.
+
+With [Obsidian CLI](https://obsidian.md/cli) (v1.11.5+), you can streamline the dev workflow:
+
+```bash
+# Reload the plugin after editing
+obsidian reload-plugin file-creation-tracker
+
+# Open DevTools for debugging
+obsidian devtools
+
+# Inspect the sidebar DOM
+obsidian eval "document.querySelector('.fct-container')?.innerHTML"
+```
+
+Enable CLI in: Settings > General > Command line interface.
+
 ## Note
 
 This plugin was built with Claude Code (AI CLI). Desktop only - uses filesystem creation time which may not be available on mobile.
